@@ -1,0 +1,114 @@
+*{
+    font-family: "Montserrat";
+}
+
+
+h1{
+    font-weight: 700;
+    font-size: 48px;
+
+}
+
+nav a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+p{
+    margin-bottom: 16px;
+    color: gray;
+    font-size: 24px;
+}
+
+.btn{
+    color: white;
+    background-color: #FCC737;
+    padding: 8px 24px;
+    border: solid 2px #FCC737;
+}
+
+.btn-alt{
+    
+    background-color: white;
+    color: black;
+    margin-right: 16px;
+    border: solid 2px #FCC737;
+}
+
+section{
+    padding: 16px 128px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 16px 128px;
+}
+
+#header h1{
+    margin: 0;
+}
+
+#landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    column-gap: 16px;
+}
+
+#landing p {
+    margin-bottom: 32px;
+    
+}
+
+#landing > div{
+    width: 50%;
+}
+
+nav > a {
+    margin-left: 12px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+#about > div{
+    width: 50%;
+}
+
+#about-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 72px;
+
+}
+
+.about-stats-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about-stats-item div{
+    width: 50px;
+    height: 10px;
+    background-color: #FCC737;
+    margin-bottom: 16px;
+}
+
+
