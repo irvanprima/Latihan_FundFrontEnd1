@@ -2,6 +2,10 @@
     font-family: "Montserrat";
 }
 
+html,body{
+    padding: 0;
+    margin: 0;
+}
 
 h1{
     font-weight: 700;
@@ -49,8 +53,14 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* margin: 16px 128px; */
+    margin: 0px 128px;
 
-    margin: 16px 128px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+
+    padding: 20px;
 }
 
 #header h1{
@@ -112,3 +122,147 @@ nav > a {
 }
 
 
+.service-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 128px;
+    margin-top: 50px;
+}
+
+.service-stats-items{
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.service-stats-items h2{
+    
+    /* text-align: center; */
+    padding: 0 16px;
+}
+
+.service-stats-items img{
+    width: 100%;
+}
+
+.service-stats-items p{
+    /* text-align: center; */
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.contact-detail{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 128px;
+    margin-top: 32px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    column-gap: 500px;
+    border: 3px solid #FCC737;
+    padding: 64px 32px;
+}
+
+form h1{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.form button{
+    border: none;
+    margin-top: 20px;
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+
+    grid-template-areas:    "name subject"
+                            "email phone"
+                            "message message";
+}
+
+#input-name{
+    grid-area: name;
+}
+
+#input-subject{
+    grid-area: subject;
+}
+
+#input-email{
+    grid-area: email;
+}
+
+#input-phone{
+    grid-area: phone;
+}
+
+#input-message{
+    grid-area: message;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    font-size: 32px;
+    border-color: #FCC737 1px solid;
+}
+
+.input-group input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group label{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 20px;
+    
+}
+
+footer{
+    padding: 16px 128px;
+    background-color: #FCC737;
+    color: white;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-top: 128px;
+}
+
+footer p{
+    color: white;
+    width: 50%;
+    
+}
+
+footer h1{
+    margin-top: 0;
+}
+
+footer div{
+    /* column-gap: 32px; */
+    margin: 64px;
+}
+
+footer img{
+    padding-right: 24px;
+}
