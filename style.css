@@ -59,7 +59,7 @@ section{
     position: sticky;
     top: 0px;
     background-color: white;
-
+    z-index: +1;
     padding: 20px;
 }
 
@@ -86,6 +86,10 @@ section{
 
 nav > a {
     margin-left: 12px;
+}
+
+nav > a:hover{
+    color: #FCC737;
 }
 
 #about{
@@ -128,6 +132,21 @@ nav > a {
     align-items: center;
 }
 
+.service-header h1{
+    position: relative;
+}
+
+.service-header h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(./images/accent1.svg);
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    z-index: -1;
+}
+
 .service-stats{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -138,7 +157,16 @@ nav > a {
 
 .service-stats-items{
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1); 
+
+    filter: grayscale(1);
 }
+
+.service-stats-items:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+
 
 .service-stats-items h2{
     
@@ -156,11 +184,32 @@ nav > a {
     font-size: 16px;
 }
 
+#contact h1{
+    position: relative;
+}
+
+#contact > h1::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+
+    left: -20px;
+    top: -20px;
+    background: url(./images/accent2.svg);
+    z-index: -1;
+}
+
 .contact-detail{
     display: flex;
-    justify-content: space-between;
-    column-gap: 128px;
-    margin-top: 32px;
+    justify-content: space-evenly;
+    
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    column-gap: 100px; */
+    margin-top: 72px;
+    
     
 }
 
@@ -178,9 +227,13 @@ form h1{
     margin-bottom: 32px;
 }
 
-.form button{
+form button{
     border: none;
     margin-top: 20px;
+}
+
+form button:hover{
+    cursor: pointer;
 }
 
 .form-group{
@@ -227,6 +280,10 @@ form h1{
     border: none;
     outline: none;
     border-bottom: 1px solid black;
+}
+
+.input-group input:focus{
+    border-bottom: 2px solid #FCC737;
 }
 
 .input-group label{
